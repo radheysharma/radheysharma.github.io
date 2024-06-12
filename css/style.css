@@ -62,12 +62,26 @@ section {
     text-align: justify;
 }
 
+#projects ol{
+    /* background-color: aqua; */
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 @media screen and (max-width: 800px){
     #about{
         margin: 10px;
     }
     #about h2{
         transform: translateX(0px);
+    }
+
+    #projects ol{
+        /* background-color: aqua; */
+        text-align: justify;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
@@ -78,13 +92,6 @@ section {
         display: block;
         clear: both;
     }
-}
-
-#projects ol{
-    /* background-color: aqua; */
-    text-align: justify;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .skills{
