@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,23 +33,66 @@ nav a:hover {
     background-color: #555;
 }
 
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
 #about{
     padding: 5%;
-    max-width: 500px;
+    margin-right: 100px;
+}
+
+#about h2{
+    transform: translateX(50px);
 }
 
 #about img {
-    width: 50%;
+    min-width: 200px;
+    max-width: 25%;
+    margin: 10px;
+    margin-right: 50px;
     border-radius: 50%;
+    display: inline-block;
+    float: left;
 }
 
 #about p{
     text-align: justify;
 }
 
-section {
-    padding: 20px;
-    text-align: center;
+@media screen and (max-width: 800px){
+    #about{
+        margin: 10px;
+    }
+    #about h2{
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 515px){
+    #about img{
+        margin: auto;
+        float: none;
+        display: block;
+        clear: both;
+    }
+}
+
+#projects ol{
+    /* background-color: aqua; */
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.skills{
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(150, 150, 150);
+    border-radius: 10px;
 }
 
 footer {
